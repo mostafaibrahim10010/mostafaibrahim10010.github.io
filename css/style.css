@@ -803,9 +803,12 @@ animation: floatImage 4s ease-in-out infinite;
         margin-top: 2rem;
     }
 
-    .container h2{
-        margin-top: 35px;
-        margin-left: 142px;
+    .container h2 {
+        text-align: center;
+        color: var(--light-one);
+        font-size: 3rem;
+        margin: 2rem;
+        border-radius: 2rem;
     }
 
     .blog-post{
@@ -845,21 +848,20 @@ animation: floatImage 4s ease-in-out infinite;
     }
 
     .blog-post{
-        padding: 2.5rem;
+        padding: 1.5rem;
         flex-direction: column;
-        max-width: 30rem;
-        
+        max-width: 34rem;
     }
 
-}
+} 
 
 @media(max-width:365px){
     .home-img img{
-        width: 90vw;
+        width: 75vw;
     }
 
     .about-img img{
-        width: 90vw;
+        width: 75vw;
     }
 
     .footer{
