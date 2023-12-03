@@ -816,6 +816,9 @@ animation: floatImage 4s ease-in-out infinite;
         flex-direction: column;
         max-width: 60rem;
     }
+    .logo img {
+        width: 100%;
+    }
 }
 
 @media(max-width:617px){
