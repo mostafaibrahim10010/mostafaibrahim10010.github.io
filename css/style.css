@@ -67,6 +67,33 @@ section{
     color: var(--dark-two);
     margin-left: 4rem;
 }
+div#preloader {
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background-color: #f57500;
+    position: absolute;
+}
+div#preloader p{
+    color: WHITE;
+    margin: auto;
+    font-size: 25rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+div#preloader span {
+    color: white;
+}
+.hidden {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+.show {
+    display: block;
+}
 
 .navbar a:hover,
 .navbar a.active
@@ -175,14 +202,13 @@ span{
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    
-    background-color: var(--main-color);
-
+    background-color: #ff7a00;
     padding-top: 12rem;
+    background-image: url('../Images/zeros-ones.png');
 }
 
 .about-img img{
-width: 35vw;
+width: 50vw;
 animation: floatImage 4s ease-in-out infinite;
 }
 
@@ -211,7 +237,7 @@ animation: floatImage 4s ease-in-out infinite;
 }
 
 .about-content a{
-    color: #201C3C;
+    color: #2716a5;
 }
 
 .btnr{
@@ -238,7 +264,8 @@ animation: floatImage 4s ease-in-out infinite;
 
 
  .skills-section{
-    background-color: var(--main-color);
+    background-color: #ff7a00;
+    background-image: url('../Images/zeros-ones.png');
     padding-top: 0;
     padding-bottom: 4rem;
 }
@@ -736,18 +763,21 @@ animation: floatImage 4s ease-in-out infinite;
     }
 
     .home-img{
-        width: 70vw;
         margin-top: 4rem;
     }
 
     .about{
         flex-direction: column-reverse;
     }
+    .home-img img {
+    width: 50vw;
+    animation: floatImage 4s ease-in-out infinite;
+}
 
-    .about-img{
+    /* .about-img{
         width: 70vw;
         margin-top: 4rem;
-    }
+    } */
 
     .my-projects h2{
         margin-bottom: 3rem;
@@ -767,7 +797,7 @@ animation: floatImage 4s ease-in-out infinite;
 
     .blog-post-img{
         max-width: 100%;
-        min-width: 70%;
+        min-width: none;
         transform: translate(0 ,0.1rem);
         margin-bottom: 4rem;
     }
@@ -833,6 +863,9 @@ animation: floatImage 4s ease-in-out infinite;
     html{
         font-size: 50%;
     }
+    .logo img {
+    width: 100%;
+}
 
     .contact form .input-box input{
         width: 100%;
@@ -847,10 +880,34 @@ animation: floatImage 4s ease-in-out infinite;
         margin-top: 2rem;
     }
 
-    .blog-post{
+    .blog-post {
         padding: 1.5rem;
         flex-direction: column;
         max-width: 34rem;
+        margin: 2rem 0;
+    }
+    .skills-info {
+        grid-template-columns: repeat(3,1fr);
+        gap: 1rem 0;
+    }
+    .skills-blob img {
+        width: 5.5rem;
+    }
+
+    .skills-blob {
+        width: 80px;
+        height: 88px;
+        background-color: #E5E7E9;
+        border-radius: 3rem;
+        place-items: center;
+        margin-bottom: 1rem;
+    }
+    /* .blog-post-img {
+        min-width: none;
+    } */
+    .blog-post-img img {
+        width: 100%;
+        height: 100%;
     }
 
 } 

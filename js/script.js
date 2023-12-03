@@ -1,3 +1,11 @@
+// preloader
+// let main = document.querySelector('.hidden');
+// let preloader = document.querySelector('#preloader');
+
+// document.addEventListener("DOMContentLoaded", (event) => {
+//     main.classList.toggle('show');
+//     preloader.classList.toggle('hidden');
+//   });
 
 // toggle icon navbar
 
